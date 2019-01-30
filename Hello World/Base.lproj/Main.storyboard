@@ -18,33 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSZ-fV-WpH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4J1-3q-qHg">
                                 <rect key="frame" x="149.5" y="40" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0H-ie-cKR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgz-Xu-nR1">
                                 <rect key="frame" x="170" y="71" width="35" height="30"/>
                                 <state key="normal" title="Hello"/>
+                                <connections>
+                                    <action selector="doHello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ca8-xj-HwZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCD-0P-6iQ">
-                                <rect key="frame" x="169" y="111" width="36" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53y-Bh-BQz">
+                                <rect key="frame" x="169.5" y="111" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="doClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ge-Ma-lt2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gSZ-fV-WpH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="35S-Lr-XQM"/>
-                            <constraint firstItem="gSZ-fV-WpH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gSP-d9-N7r"/>
-                            <constraint firstItem="HCD-0P-6iQ" firstAttribute="top" secondItem="J0H-ie-cKR" secondAttribute="bottom" constant="10" id="k74-aZ-VTP"/>
-                            <constraint firstItem="J0H-ie-cKR" firstAttribute="top" secondItem="gSZ-fV-WpH" secondAttribute="bottom" constant="10" id="nrd-xF-3Vu"/>
+                            <constraint firstItem="Wgz-Xu-nR1" firstAttribute="centerX" secondItem="4J1-3q-qHg" secondAttribute="centerX" id="01C-02-ddT"/>
+                            <constraint firstItem="4J1-3q-qHg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MLm-td-FT7"/>
+                            <constraint firstItem="Wgz-Xu-nR1" firstAttribute="top" secondItem="4J1-3q-qHg" secondAttribute="bottom" constant="10" id="QFU-Ql-QFe"/>
+                            <constraint firstItem="53y-Bh-BQz" firstAttribute="centerX" secondItem="Wgz-Xu-nR1" secondAttribute="centerX" id="ccc-W4-aBH"/>
+                            <constraint firstItem="4J1-3q-qHg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="oJw-Bg-6da"/>
+                            <constraint firstItem="53y-Bh-BQz" firstAttribute="top" secondItem="Wgz-Xu-nR1" secondAttribute="bottom" constant="10" id="xJU-qo-e2P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="MessageLabel" destination="4J1-3q-qHg" id="QMv-Aj-TUs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="27.436281859070466"/>
         </scene>
     </scenes>
 </document>

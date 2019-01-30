@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1E9F3BB42200FE4C00D22CE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F3BB32200FE4C00D22CE7 /* AppDelegate.swift */; };
-		1E9F3BB62200FE4C00D22CE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F3BB52200FE4C00D22CE7 /* ViewController.swift */; };
 		1E9F3BB92200FE4C00D22CE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9F3BB72200FE4C00D22CE7 /* Main.storyboard */; };
 		1E9F3BBB2200FE4F00D22CE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9F3BBA2200FE4F00D22CE7 /* Assets.xcassets */; };
 		1E9F3BBE2200FE4F00D22CE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9F3BBC2200FE4F00D22CE7 /* LaunchScreen.storyboard */; };
 		1E9F3BC92200FE4F00D22CE7 /* Hello_WorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F3BC82200FE4F00D22CE7 /* Hello_WorldTests.swift */; };
 		1E9F3BD42200FE4F00D22CE7 /* Hello_WorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F3BD32200FE4F00D22CE7 /* Hello_WorldUITests.swift */; };
+		1E9F3BE22201049900D22CE7 /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F3BE12201049900D22CE7 /* HelloWorldViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		1E9F3BB02200FE4C00D22CE7 /* Hello World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9F3BB32200FE4C00D22CE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E9F3BB52200FE4C00D22CE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1E9F3BB82200FE4C00D22CE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E9F3BBA2200FE4F00D22CE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E9F3BBD2200FE4F00D22CE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		1E9F3BCF2200FE4F00D22CE7 /* Hello WorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello WorldUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9F3BD32200FE4F00D22CE7 /* Hello_WorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_WorldUITests.swift; sourceTree = "<group>"; };
 		1E9F3BD52200FE4F00D22CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E9F3BE12201049900D22CE7 /* HelloWorldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				1E9F3BB32200FE4C00D22CE7 /* AppDelegate.swift */,
-				1E9F3BB52200FE4C00D22CE7 /* ViewController.swift */,
 				1E9F3BB72200FE4C00D22CE7 /* Main.storyboard */,
 				1E9F3BBA2200FE4F00D22CE7 /* Assets.xcassets */,
 				1E9F3BBC2200FE4F00D22CE7 /* LaunchScreen.storyboard */,
 				1E9F3BBF2200FE4F00D22CE7 /* Info.plist */,
+				1E9F3BE12201049900D22CE7 /* HelloWorldViewController.swift */,
 			);
 			path = "Hello World";
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9F3BB62200FE4C00D22CE7 /* ViewController.swift in Sources */,
+				1E9F3BE22201049900D22CE7 /* HelloWorldViewController.swift in Sources */,
 				1E9F3BB42200FE4C00D22CE7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
